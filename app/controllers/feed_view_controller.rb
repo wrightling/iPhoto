@@ -1,4 +1,6 @@
 class FeedViewController < UIViewController
+  stylesheet :main
+
   def initWithNibName(nibNameOrNil, bundle:nibBundleOrNil)
     super
 
@@ -10,7 +12,7 @@ class FeedViewController < UIViewController
   def viewDidLoad
     super
 
-    self.view.backgroundColor = UIColor.blueColor
+    self.view.stylename = :root
 
     favoritesButton = UIButton.buttonWithType UIButtonTypeRoundedRect
     favoritesButton.frame = CGRectMake(60,100,200,44)

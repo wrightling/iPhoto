@@ -12,11 +12,12 @@ class FeedViewController < UIViewController
   def viewDidLoad
     super
 
-    self.view.stylename = :root
+    self.view.stylename = :rootbeer
 
     favoritesButton = UIButton.buttonWithType UIButtonTypeRoundedRect
     favoritesButton.frame = CGRectMake(60,100,200,44)
     favoritesButton.setTitle("View Favorites", forState: UIControlStateNormal)
+    favoritesButton.stylename = :test
     self.view.addSubview favoritesButton
     favoritesButton.addTarget(self, action: "showFavorites",
                               forControlEvents: UIControlEventTouchUpInside)

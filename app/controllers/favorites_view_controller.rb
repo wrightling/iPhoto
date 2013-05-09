@@ -21,7 +21,7 @@ class FavoritesViewController < UIViewController
     logoView.addTarget(self, action:"showZoomedPicture",
                        forControlEvents:UIControlEventTouchUpInside)
 
-    profileButton = UIButton.buttonWithType UIButtonTypeRoundedRec
+    profileButton = UIButton.buttonWithType UIButtonTypeRoundedRect
     profileButton.frame = CGRectMake(60,300,200,44)
     profileButton.setTitle("View Profile", forState:UIControlStateNormal)
     self.view.addSubview profileButton

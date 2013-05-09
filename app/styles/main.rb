@@ -1,4 +1,4 @@
 Teacup::Stylesheet.new :main do
-  style :root,
+  style :rootbeer,
     backgroundColor: UIColor.blueColor
 end
